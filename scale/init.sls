@@ -23,7 +23,7 @@ scale_repo:
 
 install_scale_daemon:
   cmd.wait:
-    - name: cp /usr/local/scale/scale_client/scale /etc/init.d/
+    - name: cp /usr/local/scale/scale_client/daemons/scale /etc/init.d/
     - watch:
       - git: scale_repo
 
